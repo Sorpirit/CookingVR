@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8773076254866649858}
   - component: {fileID: 7027331416256800225}
+  - component: {fileID: 655596547313130506}
   m_Layer: 0
   m_Name: Physics
   m_TagString: Untagged
@@ -53,6 +54,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.0615
   m_Center: {x: 0, y: 0.06, z: 0}
+--- !u!114 &655596547313130506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5538081260726946393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc48ef33213fe7448bac5b35cdcf93b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _debugName: Tomato
 --- !u!1 &5849556182732376014
 GameObject:
   m_ObjectHideFlags: 0
@@ -86,7 +100,7 @@ Transform:
   - {fileID: 4383082372603513686}
   - {fileID: 8773076254866649858}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &2556862626027477681
 Rigidbody:
