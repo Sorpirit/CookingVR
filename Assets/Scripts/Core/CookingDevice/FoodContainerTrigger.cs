@@ -1,24 +1,13 @@
 using UnityEngine;
 using Core.Food;
+using Scripts.DependancyInjector;
 
 namespace Core.CookingDevice
 {
     public class FoodContainerTrigger : MonoBehaviour
     {
-        [SerializeField] private GameObject _container;
-
+        [Inject]
         private IFoodContainer _foodContainer;
-
-        private void Awake()
-        {
-            Debug.Assert(_container.TryGetComponent<IFoodContainer>(out var container), "No valid container is assigned to the tigger");
-            InitFoodContainer(container);
-        }
-
-        public void InitFoodContainer(IFoodContainer foodContainer)
-        {
-            _foodContainer = foodContainer;
-        }
 
         private void OnTriggerEnter(Collider other)
         {

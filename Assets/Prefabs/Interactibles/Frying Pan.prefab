@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 8962679664632217924}
   - component: {fileID: 5434502384467650318}
   - component: {fileID: 6752390205965444919}
+  - component: {fileID: 8893010486433913178}
   m_Layer: 0
   m_Name: Frying Pan
   m_TagString: Untagged
@@ -290,7 +291,7 @@ Transform:
   - {fileID: 103649345933197922}
   - {fileID: 4311662969007432970}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &8962679664632217924
 Rigidbody:
@@ -466,6 +467,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1b474819a806754eb9a9269c0bb6826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8893010486433913178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8183415578415093667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961cfcaf8c6538d4894d0f3f66986550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fringPan: {fileID: 6752390205965444919}
 --- !u!1 &8751626467162179110
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,4 +546,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4cc77e91cd1ed541b9eea52902688cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _container: {fileID: 8183415578415093667}
