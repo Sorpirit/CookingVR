@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Core.CookingDevice
 {
-    public class FringPan : MonoBehaviour, IFoodContainer
+    public class FringPan : MonoBehaviour, IFoodContainer, IStoveCooker
     {
         private HashSet<FoodObject> _content;
 
@@ -18,6 +18,16 @@ namespace Core.CookingDevice
         {
             bool result = _content.Remove(food);
             Debug.Assert(result);
+        }
+
+        public void StartCooking()
+        {
+            Debug.Log("Lets cook");
+        }
+
+        public void StopCooking()
+        {
+            Debug.Log("It was nice cooking with you");
         }
     }
 }
